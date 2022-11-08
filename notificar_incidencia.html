@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ </head>
+ <body>
+    <form action="incidencia.php" method="post">
+ <!-- El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario.-->
+        <fieldset>
+            <legend>Datos incidencia:</legend><br>
+
+            <label for = "User">Usuario:</label><br>
+            <input type="text" name="User" id="User" ><br><br>
+
+            <!-- Lista desplegable con SELECT -->
+            <label for="Depto">Departamento:</label><br>
+            <select id="Depto" name="Depto">
+                <option value="Informática">Informática</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Ventas">Ventas</option>
+            </select><br><br>
+
+            <!-- Descripcion de incidencia con Row = filas y cols = columnas -->
+            <label for="desc_incidencia">Descripcion:</label><br>
+            <textarea name="desc_incidencia" id = "desc_incidencia" rows="3" cols="40" placeholder="Describa la incidencia..."></textarea>
+        <br><br>
+
+            <label for="Password">Contraseña:</label><br>
+            <input type="text" name="Password" id="Password" ><br>
+
+        </fieldset>
+       
+        <fieldset>
+            <legend>Botones de reset y envío:</legend> 
+            <input type="reset" value="Resetear">
+            <input type="submit" value="Guardar">
+        </fieldset>
+        </form>
+    </body>
+</html>
